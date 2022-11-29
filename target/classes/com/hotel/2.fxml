@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1040.0" style="-fx-background-color: #686868#686868;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.Controller2">
+   <children>
+      <AnchorPane layoutX="120.0" layoutY="58.0" opacity="0.74" prefHeight="450.0" prefWidth="800.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <Label alignment="TOP_CENTER" layoutX="77.0" layoutY="1.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="75.0" prefWidth="230.0" text="NULP Chummpery">
+               <font>
+                  <Font name="Zapfino" size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_CENTER" layoutX="244.0" layoutY="18.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="347.0" text="Вибір кімнати" textAlignment="CENTER">
+               <font>
+                  <Font name="Rockwell" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="353.0" fitWidth="757.0" layoutX="22.0" layoutY="76.0">
+               <image>
+                  <Image url="file:/Users/imac/Desktop/hotel/hotel/src/main/java/images/Josub3.jpg" />
+               </image>
+            </ImageView>
+            <Button id="206" fx:id="bed6" layoutX="69.0" layoutY="90.0" mnemonicParsing="false" opacity="0.31" prefHeight="54.0" prefWidth="38.0">
+               <font>
+                  <Font name="Rockwell" size="1.0" />
+               </font>
+            </Button>
+            <Button id="207" fx:id="bed7" layoutX="173.0" layoutY="90.0" mnemonicParsing="false" opacity="0.31" prefHeight="54.0" prefWidth="38.0">
+               <font>
+                  <Font name="Rockwell" size="1.0" />
+               </font>
+            </Button>
+            <Button id="208" fx:id="bed8" layoutX="219.0" layoutY="90.0" mnemonicParsing="false" opacity="0.31" prefHeight="54.0" prefWidth="38.0">
+               <font>
+                  <Font name="Rockwell" size="1.0" />
+               </font>
+            </Button>
+            <Button id="209" fx:id="bed9" layoutX="316.0" layoutY="90.0" mnemonicParsing="false" opacity="0.31" prefHeight="54.0" prefWidth="38.0">
+               <font>
+                  <Font name="Rockwell" size="1.0" />
+               </font>
+            </Button>
+            <Button id="210" fx:id="bed10" layoutX="359.0" layoutY="90.0" mnemonicParsing="false" opacity="0.31" prefHeight="54.0" prefWidth="38.0">
+               <font>
+                  <Font name="Rockwell" size="1.0" />
+               </font>
+            </Button>
+            <Button id="217" fx:id="bed17" layoutX="707.0" layoutY="376.0" mnemonicParsing="false" opacity="0.31" prefHeight="40.0" prefWidth="59.0">
+               <font>
+                  <Font name="Rockwell" size="1.0" />
+               </font>
+            </Button>
+            <Button id="216" fx:id="bed16" layoutX="710.0" layoutY="322.0" mnemonicParsing="false" opacity="0.31" prefHeight="40.0" prefWidth="59.0">
+               <font>
+                  <Font name="Rockwell" size="1.0" />
+               </font>
+            </Button>
+            <Button id="205" fx:id="bed5" layoutX="31.0" layoutY="362.0" mnemonicParsing="false" opacity="0.31" prefHeight="54.0" prefWidth="38.0">
+               <font>
+                  <Font name="Rockwell" size="1.0" />
+               </font>
+            </Button>
+            <Button id="204" fx:id="bed4" layoutX="129.0" layoutY="362.0" mnemonicParsing="false" opacity="0.31" prefHeight="54.0" prefWidth="38.0">
+               <font>
+                  <Font name="Rockwell" size="1.0" />
+               </font>
+            </Button>
+            <Button id="213" fx:id="bed13" layoutX="602.0" layoutY="90.0" mnemonicParsing="false" opacity="0.31" prefHeight="54.0" prefWidth="38.0">
+               <font>
+                  <Font name="Rockwell" size="1.0" />
+               </font>
+            </Button>
+            <Button id="212" fx:id="bed12" layoutX="505.0" layoutY="90.0" mnemonicParsing="false" opacity="0.31" prefHeight="54.0" prefWidth="38.0">
+               <font>
+                  <Font name="Rockwell" size="1.0" />
+               </font>
+            </Button>
+            <Button id="211" fx:id="bed11" layoutX="460.0" layoutY="90.0" mnemonicParsing="false" opacity="0.31" prefHeight="54.0" prefWidth="38.0">
+               <font>
+                  <Font name="Rockwell" size="1.0" />
+               </font>
+            </Button>
+            <Button id="203" fx:id="bed3" layoutX="210.0" layoutY="362.0" mnemonicParsing="false" opacity="0.31" prefHeight="54.0" prefWidth="38.0">
+               <font>
+                  <Font name="Rockwell" size="1.0" />
+               </font>
+            </Button>
+            <Button id="202" fx:id="bed2" layoutX="257.0" layoutY="362.0" mnemonicParsing="false" opacity="0.31" prefHeight="54.0" prefWidth="38.0">
+               <font>
+                  <Font name="Rockwell" size="1.0" />
+               </font>
+            </Button>
+            <Button id="201" fx:id="bed1" layoutX="335.0" layoutY="362.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" opacity="0.31" prefHeight="54.0" prefWidth="38.0">
+               <font>
+                  <Font name="Rockwell" size="1.0" />
+               </font>
+            </Button>
+            <Button fx:id="bed19" layoutX="441.0" layoutY="362.0" mnemonicParsing="false" opacity="0.31" prefHeight="54.0" prefWidth="38.0">
+               <font>
+                  <Font name="Rockwell" size="1.0" />
+               </font>
+            </Button>
+            <Button fx:id="bed18" layoutX="524.0" layoutY="362.0" mnemonicParsing="false" opacity="0.31" prefHeight="54.0" prefWidth="38.0">
+               <font>
+                  <Font name="Rockwell" size="1.0" />
+               </font>
+            </Button>
+            <Button id="215" fx:id="bed15" layoutX="732.0" layoutY="90.0" mnemonicParsing="false" opacity="0.31" prefHeight="54.0" prefWidth="38.0">
+               <font>
+                  <Font name="Rockwell" size="1.0" />
+               </font>
+            </Button>
+            <Button id="214" fx:id="bed14" layoutX="648.0" layoutY="90.0" mnemonicParsing="false" opacity="0.31" prefHeight="54.0" prefWidth="38.0">
+               <font>
+                  <Font name="Rockwell" size="1.0" />
+               </font>
+            </Button>
+            <Button id="206" fx:id="back" graphicTextGap="6.0" layoutX="22.0" layoutY="25.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="47.0" text="&lt;" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

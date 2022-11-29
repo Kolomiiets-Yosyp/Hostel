@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1040.0" style="-fx-background-color: #686868#686868;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.HelloController">
+   <children>
+      <AnchorPane layoutX="120.0" layoutY="75.0" opacity="0.74" prefHeight="450.0" prefWidth="800.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <Label alignment="TOP_CENTER" layoutX="73.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="85.0" prefWidth="654.0" text="NULP Chummpery">
+               <font>
+                  <Font name="Zapfino" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="login_filed" layoutX="142.0" layoutY="187.0" prefHeight="35.0" prefWidth="517.0" promptText="Логін">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="password_filed" layoutX="142.0" layoutY="241.0" prefHeight="40.0" prefWidth="517.0" promptText="Пароль">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </PasswordField>
+            <Label alignment="TOP_CENTER" layoutX="227.0" layoutY="109.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="347.0" text="Авторизація" textAlignment="CENTER">
+               <font>
+                  <Font name="Rockwell" size="26.0" />
+               </font>
+            </Label>
+            <Button fx:id="SingUpButton" layoutX="275.0" layoutY="302.0" mnemonicParsing="false" onAction="#loginButtonOnActionlogin" prefHeight="63.0" prefWidth="251.0" style="-fx-background-color: #E89B19#E89B19;" text="Увійти">
+               <font>
+                  <Font name="Rockwell" size="30.0" />
+               </font>
+            </Button>
+            <Label fx:id="loginMassageLabel" alignment="CENTER" layoutX="244.0" layoutY="158.0" onDragDetected="#loginMassageLabel" prefHeight="27.0" prefWidth="322.0" textFill="#eb3535">
+               <font>
+                  <Font name="Rockwell" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

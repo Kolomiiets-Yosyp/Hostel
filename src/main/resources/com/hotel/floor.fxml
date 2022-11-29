@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1040.0" style="-fx-background-color: #686868#686868;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.FloorController">
+    <children>
+        <AnchorPane layoutX="120.0" layoutY="58.0" opacity="0.74" prefHeight="450.0" prefWidth="800.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="1.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="75.0" prefWidth="230.0" text="NULP Chummpery">
+                    <font>
+                        <Font name="Zapfino" size="17.0" />
+                    </font>
+                </Label>
+                <Label alignment="TOP_CENTER" layoutX="244.0" layoutY="18.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="347.0" text="Вибір поверху" textAlignment="CENTER">
+                    <font>
+                        <Font name="Rockwell" size="24.0" />
+                    </font>
+                </Label>
+            <ImageView fitHeight="436.0" fitWidth="515.0" layoutX="209.0" layoutY="53.0" preserveRatio="true">
+               <image>
+                  <Image url="file:/Users/imac/Desktop/hotel/hotel/src/main/java/images/Hostel.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="fool7" layoutX="114.0" layoutY="137.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" style="-fx-background-color: #E89B19#E89B19;" text="7 поверх">
+               <font>
+                  <Font name="Rockwell" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="fool6" layoutX="114.0" layoutY="180.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" style="-fx-background-color: #E89B19#E89B19;" text="6 поверх">
+               <font>
+                  <Font name="Rockwell" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="fool5" layoutX="114.0" layoutY="224.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" style="-fx-background-color: #E89B19#E89B19;" text="5 поверх">
+               <font>
+                  <Font name="Rockwell" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="fool4" layoutX="114.0" layoutY="267.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" style="-fx-background-color: #E89B19#E89B19;" text="4 поверх">
+               <font>
+                  <Font name="Rockwell" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="fool3" layoutX="114.0" layoutY="310.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" style="-fx-background-color: #E89B19#E89B19;" text="3 поверх">
+               <font>
+                  <Font name="Rockwell" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="fool2" layoutX="114.0" layoutY="353.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" style="-fx-background-color: #E89B19#E89B19;" text="2 поверх">
+               <font>
+                  <Font name="Rockwell" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="fool1" layoutX="114.0" layoutY="397.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" style="-fx-background-color: #E89B19#E89B19;" text="1 поверх">
+               <font>
+                  <Font name="Rockwell" size="14.0" />
+               </font>
+            </Button>
+            <Text id="Text" fx:id="Text" layoutX="78.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
