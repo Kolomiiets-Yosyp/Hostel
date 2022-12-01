@@ -5,6 +5,8 @@ import java.net.Socket;
 import java.net.URL;
 import java.sql.*;
 import java.util.ResourceBundle;
+
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -86,7 +88,7 @@ HelloController helloController= new HelloController();
             fool1.getScene().getWindow().hide();
             try {
 
-                Serv(x1);
+//                Serv(x1);
 
                 DDA dda = new DDA();
 
@@ -96,9 +98,10 @@ HelloController helloController= new HelloController();
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root));
                 stage.setTitle("NULP");
-
                 Controller2 controller2= loader.getController();
-                controller2.initialize(stage.getScene());
+                Button button = (Button) event.getSource();
+                int fl= Integer.parseInt(button.getId());
+                controller2.initialize(fl,id);
                 stage.show();
             } catch (Exception e) {
                 throw new RuntimeException(e);
@@ -111,11 +114,14 @@ HelloController helloController= new HelloController();
             try {
 
                 DDA dda = new DDA();
-                Serv(x1+1);
+//                Serv(x1+1);
                 FXMLLoader loader=new FXMLLoader(getClass().getResource("2.fxml"));
                 Parent root = loader.load();
-
+                Controller2 controller2= loader.getController();
                 Stage stage = new Stage();
+                Button button = (Button) event.getSource();
+                int fl= Integer.parseInt(button.getId());
+                controller2.initialize(fl,id);
                 stage.setScene(new Scene(root));
                 stage.setTitle("NULP");
                 stage.show();
@@ -127,27 +133,39 @@ HelloController helloController= new HelloController();
             fool3.getScene().getWindow().hide();
             try {
 
-                Serv(x1+2);
+//                Serv(x1+2);
                 FXMLLoader loader=new FXMLLoader(getClass().getResource("2.fxml"));
                 Parent root = loader.load();
-
+                Controller2 controller2= loader.getController();
+                Button button = (Button) event.getSource();
+                int fl= Integer.parseInt(button.getId());
+                controller2.initialize(fl,id);
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root));
                 stage.setTitle("NULP");
+                stage.setOnCloseRequest(e -> {
+                    e.consume();
+                });
                 stage.show();
+
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
+
         });
+
         fool4.setOnAction(event -> {
             fool4.getScene().getWindow().hide();
             try {
 
                 DDA dda = new DDA();
-                Serv(x1+3);
+//                Serv(x1+3);
                 FXMLLoader loader=new FXMLLoader(getClass().getResource("2.fxml"));
                 Parent root = loader.load();
-
+                Controller2 controller2= loader.getController();
+                Button button = (Button) event.getSource();
+                int fl= Integer.parseInt(button.getId());
+                controller2.initialize(fl,id);
                 Stage stage = new Stage();
                 stage.setResizable(false);
                 stage.setScene(new Scene(root));

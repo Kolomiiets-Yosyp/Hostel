@@ -42,22 +42,22 @@
                   <Font name="Rockwell" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="fool4" layoutX="114.0" layoutY="267.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" style="-fx-background-color: #E89B19#E89B19;" text="4 поверх">
+            <Button id="4" fx:id="fool4" layoutX="114.0" layoutY="267.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" style="-fx-background-color: #E89B19#E89B19;" text="4 поверх">
                <font>
                   <Font name="Rockwell" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="fool3" layoutX="114.0" layoutY="310.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" style="-fx-background-color: #E89B19#E89B19;" text="3 поверх">
+            <Button id="3" fx:id="fool3" layoutX="114.0" layoutY="310.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" style="-fx-background-color: #E89B19#E89B19;" text="3 поверх">
                <font>
                   <Font name="Rockwell" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="fool2" layoutX="114.0" layoutY="353.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" style="-fx-background-color: #E89B19#E89B19;" text="2 поверх">
+            <Button id="2" fx:id="fool2" layoutX="114.0" layoutY="353.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" style="-fx-background-color: #E89B19#E89B19;" text="2 поверх">
                <font>
                   <Font name="Rockwell" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="fool1" layoutX="114.0" layoutY="397.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" style="-fx-background-color: #E89B19#E89B19;" text="1 поверх">
+            <Button id="1" fx:id="fool1" layoutX="114.0" layoutY="397.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" style="-fx-background-color: #E89B19#E89B19;" text="1 поверх">
                <font>
                   <Font name="Rockwell" size="14.0" />
                </font>

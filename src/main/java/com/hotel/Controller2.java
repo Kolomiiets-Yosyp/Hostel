@@ -8,7 +8,6 @@ import java.net.Socket;
 import java.net.URL;
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
@@ -20,7 +19,9 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class Controller2 {
-
+ 
+    @FXML
+    private AnchorPane Scene;
     @FXML
     private AnchorPane Sss;
 
@@ -93,14 +94,15 @@ public class Controller2 {
     Connection connectDB = worker.getConnection();
     public int id;
     ArrayList<Integer> arrayList = new ArrayList<Integer>();
-    void bbedd() {
+    void bbedd(int fl) {
         try {
 
             Statement statement = connectDB.createStatement();
             ResultSet resultSet;
-            resultSet = statement.executeQuery("select  bed1, bed2, bed3, bed4, bed5, bed6, bed7 from floorID where floorID=4");
+            resultSet = statement.executeQuery("select  bed1, bed2, bed3, bed4, bed5, bed6, bed7 from floorID where floorID="+fl);
+
             while (resultSet.next()) {
-                for (int i = 2; i < 8; i++) {
+                for (int i = 1; i < 8; i++) {
                     arrayList.add(resultSet.getInt(i));
                 }
             }
@@ -109,13 +111,12 @@ public class Controller2 {
         }
 
     }
-
     static OutputStreamWriter outputStream;
     static InputStreamReader inputStream;
     BufferedReader bufferedReader;
     BufferedWriter bufferedWriter;
 
-    public void Serv(int bed) {
+    public void Serv(int id,int fl,int bed) {
         try {
 
 
@@ -127,7 +128,7 @@ public class Controller2 {
             bufferedWriter = new BufferedWriter(outputStream);
             while (true) {
                 String florid = String.valueOf(bed);
-                bufferedWriter.write(florid);
+                bufferedWriter.write(String.valueOf(id+" "+fl+" "+florid));
                 bufferedWriter.newLine();
                 bufferedWriter.flush();
                 bufferedReader.readLine();
@@ -141,10 +142,11 @@ public class Controller2 {
     }
 
     @FXML
-    void initialize(Scene scene) {
+    void initialize(int fl,int id) {
+        bbedd(fl);
+        Button(id,fl);
 
-        bbedd();
-        Button(scene);
+
 
         //BACK!!!!!!
         back.setOnAction(event -> {
@@ -155,7 +157,7 @@ public class Controller2 {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("floor.fxml"));
                 Parent root = loader.load();
                 FloorController floorController = loader.getController();
-                floorController.initialize(dda.getX());
+                floorController.initialize(id);
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root));
                 stage.setResizable(false);
@@ -167,95 +169,25 @@ public class Controller2 {
             }
         });
 
-
     }
 
-public void Button(Scene scene){
+public void Button(int id , int fl){
+    for (int i = 1; i < arrayList.toArray().length; i++) {
+        Button button = (Button) Sss.lookup("#bed"+i);
+            if (arrayList.get(i-1) ==0) {
+                int finalI = i;
 
-            ArrayList<Button> buttons= new ArrayList<Button>();
-            buttons.add((Button) Sss.getChildren());
-        System.out.println(buttons.get(0));
-//        button.setOnAction(event -> {
-//            button.getScene().getWindow().hide();
-//            System.out.println(1111);
-//
-//        });
+                button.setOnAction(event -> {
+                    button.getScene().getWindow();
+                    Serv(id,fl,finalI);
+                });
+
+            }else {
+               button.setStyle("-fx-background-color: Red");
+            }
+
 }
-//        bed1.setOnAction(event -> {
-//            bed1.getScene().getWindow().hide();
-//
-//            if (arrayList.get(1) ==0) {
-//                Serv(1);
-//            }
-//        });
-//        bed2.setOnAction(event -> {
-//            bed2.getScene().getWindow().hide();
-//            if (arrayList.get(2) ==0) {
-//                Serv(2);
-//            }
-//        });
-//        bed3.setOnAction(event -> {
-//            bed3.getScene().getWindow().hide();
-//            if (arrayList.get(3) ==0) {
-//                Serv(3);
-//            }
-//        });
-//        bed4.setOnAction(event -> {
-//            bed4.getScene().getWindow().hide();
-//            if (arrayList.get(4) ==0) {
-//                Serv(4);
-//            }
-//        });
-//        bed5.setOnAction(event -> {
-//            bed5.getScene().getWindow().hide();
-//            if (arrayList.get(5) ==0) {
-//                Serv(5);
-//            }
-//        });
-//        bed6.setOnAction(event -> {
-//            bed6.getScene().getWindow().hide();
-//            if (arrayList.get(6) ==0) {
-//                Serv(6);
-//            }
-//        });
-//        bed7.setOnAction(event -> {
-//            bed7.getScene().getWindow().hide();
-//            if (arrayList.get(7) ==0) {
-//                Serv(7);
-//            }
-//        });
-//        bed8.setOnAction(event -> {
-//            bed8.getScene().getWindow().hide();
-//            if (arrayList.get(8) ==0) {
-//                Serv(8);
-//            }
-//        });
-//        bed9.setOnAction(event -> {
-//            bed9.getScene().getWindow().hide();
-//            if (arrayList.get(9) ==0) {
-//                Serv(9);
-//            }
-//        });
-//        bed10.setOnAction(event -> {
-//            bed10.getScene().getWindow().hide();
-//            if (arrayList.get(10) ==0) {
-//                Serv(10);
-//            }
-//        });
-//        bed11.setOnAction(event -> {
-//            bed11.getScene().getWindow().hide();
-//            if (arrayList.get(11) ==0) {
-//                Serv(11);
-//            }
-//        });
-//        bed12.setOnAction(event -> {
-//            bed12.getScene().getWindow().hide();
-//            if (arrayList.get(12) ==0) {
-//                Serv(12);
-//            }
-//        });
-
 
         }
 
-
+    }

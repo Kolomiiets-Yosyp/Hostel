@@ -50,7 +50,7 @@ public class HelloController {
         if (!login_filed.getText().isBlank() && !password_filed.getText().isBlank()) {
             try {
                 validateLogin();
-                Serv();
+//                Serv();
 
             } catch (Exception e) {
                 System.err.println(e);
