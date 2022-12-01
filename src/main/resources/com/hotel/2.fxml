@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1040.0" style="-fx-background-color: #686868#686868;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.Controller2">
+<AnchorPane id="Scenee" fx:id="Scene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1040.0" style="-fx-background-color: #686868#686868;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.Controller2">
    <children>
-      <AnchorPane layoutX="120.0" layoutY="58.0" opacity="0.74" prefHeight="450.0" prefWidth="800.0" style="-fx-background-color: #fafafa;">
+      <AnchorPane id="Sss" fx:id="Sss" layoutX="120.0" layoutY="58.0" opacity="0.74" prefHeight="450.0" prefWidth="800.0" style="-fx-background-color: #fafafa;">
          <children>
             <Label alignment="TOP_CENTER" layoutX="77.0" layoutY="1.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="75.0" prefWidth="230.0" text="NULP Chummpery">
                <font>
@@ -27,7 +27,7 @@
                   <Image url="file:/Users/imac/Desktop/hotel/hotel/src/main/java/images/Josub3.jpg" />
                </image>
             </ImageView>
-            <Button id="206" fx:id="bed6" layoutX="69.0" layoutY="90.0" mnemonicParsing="false" opacity="0.31" prefHeight="54.0" prefWidth="38.0">
+            <Button  id="206" fx:id="bed6" layoutX="69.0" layoutY="90.0" mnemonicParsing="false" opacity="0.31" prefHeight="54.0" prefWidth="38.0">
                <font>
                   <Font name="Rockwell" size="1.0" />
                </font>
