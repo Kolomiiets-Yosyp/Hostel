@@ -102,12 +102,12 @@
                   <Font name="Rockwell" size="1.0" />
                </font>
             </Button>
-            <Button fx:id="bed19" layoutX="441.0" layoutY="362.0" mnemonicParsing="false" opacity="0.31" prefHeight="54.0" prefWidth="38.0">
+            <Button id="bed19" fx:id="bed19" layoutX="441.0" layoutY="362.0" mnemonicParsing="false" opacity="0.31" prefHeight="54.0" prefWidth="38.0">
                <font>
                   <Font name="Rockwell" size="1.0" />
                </font>
             </Button>
-            <Button fx:id="bed18" layoutX="524.0" layoutY="362.0" mnemonicParsing="false" opacity="0.31" prefHeight="54.0" prefWidth="38.0">
+            <Button id="bed18" fx:id="bed18" layoutX="524.0" layoutY="362.0" mnemonicParsing="false" opacity="0.31" prefHeight="54.0" prefWidth="38.0">
                <font>
                   <Font name="Rockwell" size="1.0" />
                </font>

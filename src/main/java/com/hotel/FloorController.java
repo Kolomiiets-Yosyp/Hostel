@@ -83,6 +83,7 @@ HelloController helloController= new HelloController();
     @FXML
     void initialize(int id) {
 
+
         int x1=1;
         fool1.setOnAction(event -> {
             fool1.getScene().getWindow().hide();
@@ -156,6 +157,69 @@ HelloController helloController= new HelloController();
 
         fool4.setOnAction(event -> {
             fool4.getScene().getWindow().hide();
+            try {
+
+                DDA dda = new DDA();
+//                Serv(x1+3);
+                FXMLLoader loader=new FXMLLoader(getClass().getResource("2.fxml"));
+                Parent root = loader.load();
+                Controller2 controller2= loader.getController();
+                Button button = (Button) event.getSource();
+                int fl= Integer.parseInt(button.getId());
+                controller2.initialize(fl,id);
+                Stage stage = new Stage();
+                stage.setResizable(false);
+                stage.setScene(new Scene(root));
+                stage.setTitle("NULP");
+                stage.show();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        fool5.setOnAction(event -> {
+            fool5.getScene().getWindow().hide();
+            try {
+
+                DDA dda = new DDA();
+//                Serv(x1+3);
+                FXMLLoader loader=new FXMLLoader(getClass().getResource("2.fxml"));
+                Parent root = loader.load();
+                Controller2 controller2= loader.getController();
+                Button button = (Button) event.getSource();
+                int fl= Integer.parseInt(button.getId());
+                controller2.initialize(fl,id);
+                Stage stage = new Stage();
+                stage.setResizable(false);
+                stage.setScene(new Scene(root));
+                stage.setTitle("NULP");
+                stage.show();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        fool6.setOnAction(event -> {
+            fool6.getScene().getWindow().hide();
+            try {
+
+                DDA dda = new DDA();
+//                Serv(x1+3);
+                FXMLLoader loader=new FXMLLoader(getClass().getResource("2.fxml"));
+                Parent root = loader.load();
+                Controller2 controller2= loader.getController();
+                Button button = (Button) event.getSource();
+                int fl= Integer.parseInt(button.getId());
+                controller2.initialize(fl,id);
+                Stage stage = new Stage();
+                stage.setResizable(false);
+                stage.setScene(new Scene(root));
+                stage.setTitle("NULP");
+                stage.show();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        fool7.setOnAction(event -> {
+            fool7.getScene().getWindow().hide();
             try {
 
                 DDA dda = new DDA();

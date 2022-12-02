@@ -1,25 +1,33 @@
 package com.hotel;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
+import java.awt.*;
+import java.io.*;
 import java.net.Socket;
 import java.net.URL;
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
+import javax.swing.text.html.ImageView;
+
+
 public class Controller2 {
- 
+    @FXML
+    private Button ok;
+
+    @FXML
+    private Label lable;
+
+
     @FXML
     private AnchorPane Scene;
     @FXML
@@ -99,10 +107,10 @@ public class Controller2 {
 
             Statement statement = connectDB.createStatement();
             ResultSet resultSet;
-            resultSet = statement.executeQuery("select  bed1, bed2, bed3, bed4, bed5, bed6, bed7 from floorID where floorID="+fl);
+            resultSet = statement.executeQuery("select  bed1, bed2, bed3, bed4, bed5, bed6, bed7, bed8, bed9, bed10, bed11, bed12, bed13, bed14, bed15, bed16, bed17, bed18, bed19 from floorID where floorID="+fl);
 
             while (resultSet.next()) {
-                for (int i = 1; i < 8; i++) {
+                for (int i = 1; i < 20; i++) {
                     arrayList.add(resultSet.getInt(i));
                 }
             }
@@ -180,6 +188,20 @@ public void Button(int id , int fl){
                 button.setOnAction(event -> {
                     button.getScene().getWindow();
                     Serv(id,fl,finalI);
+                    try {
+
+
+                        Stage primaryStage = new Stage();
+
+                        primaryStage.setTitle("NULP");
+                        Label label = new Label("               Ви забронювали місце: " + finalI );
+                        label.setFont(new Font("Areal",24));
+                        Scene scene = new Scene(label, 400, 200);
+                        primaryStage.setScene(scene);
+                        primaryStage.show();
+                    }catch (Exception e ){
+                        System.err.println(e);
+                    }
                 });
 
             }else {
